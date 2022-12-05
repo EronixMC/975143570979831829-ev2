@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@800&display=swap');
+
+/*font-family: 'Sen', sans-serif;*/
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    transition: .5s ease-out;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*-----[BODY]-----*/
+body {
+    display: flex;
+    flex-direction: column;
+    background: #131313;
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #131313;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background: #e6ba6a;
+}
+
+/*-----[BODY]-----*/
+
+/*-----[HOME]-----*/
+.home {
+    background: url("https://media.discordapp.net/attachments/954812850352828416/1043265866537640008/unknown.png?width=1226&height=676");
+    background-position: center;
+    background-size: cover;
+    height: 43vh;
+    width: 100%;
+}
+
+.home .container {
+    background: #00000010;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 43vh;
+    display: flex;
+}
+
+.home .container h1 {
+    margin: auto;
+    color: #e6ba6a;
+    font-weight: 800;
+    font-family: 'Sen', sans-serif;
+    letter-spacing: 1px;
+    font-size: 60px;
+}
+/*-----[HOME]-----*/
+
+/*-----[NAVIGATION]-----*/
+#contentSta a {
+    font-family: 'Sen', sans-serif;
+    color: #fff;
+}
+
+.sidebar-rbody .box-statut .content a {
+    padding: 20px 30px;
+    background: #00000000;
+    border-radius: 6px;
+    margin: 5px;
+    color: #fff;
+    font-weight: 800;
+    font-family: 'Sen', sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-out;
+}
+
+.sidebar-rbody .box-statut .content a:hover {
+    background: #00000030;
+}
+
+/*-----[NAVIGATION]-----*/
+
+/*-----[SIDEBAR-RIGHT]-----*/
+.sidebar-right {
+    background: #da7272;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100vh;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-right:hover {
+    background: #171717;
+    width: 300px;
+}
+
+.sidebar-rheader {
+    width: calc(100% + 25px);
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: #333333;
+    padding: 15px 0;
+    border-radius: 6px 0 0 6px;
+}
+
+.sidebar-rheader p {
+    color: #e6ba6a;
+    margin-left: 10px;
+    display: flex;
+}
+.sidebar-rheader p span {
+    font-family: 'Sen', sans-serif;
+    color: #e6ba6a;
+    margin-left: 10px;
+    display: none;
+}
+.sidebar-right:hover .sidebar-rheader p span {display: flex;}
+
+.sidebar-rbody {
+    margin-top: 95px;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+}
+
+.sidebar-rbody::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+}
+
+.box-statut {
+    background: #1f1e1ef7;
+    box-shadow: 0 10px 12px rgb(0 0 0 / 10%);
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.box-statut .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-statut .content h1 {
+    color: #e6ba6a;
+    font-family: 'Sen', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+#uph1 {
+    height: 2px;
+    width: 40px;
+    background: #e6ba6a;
+    border-radius: 3px;
+    display: block;
+    margin-top: 5px;
+}
+
+.box-statut .content a {
+    padding: 20px 30px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.box-statut .content a:hover {
+    background: #212529f7;
+}
+
+.box-statut .content a p {
+    font-weight: 600;
+    font-family: 'Sen', sans-serif;
+    font-size: 1rem;
+}
+.box-statut .content #mc {color: #4dbb9f;}
+
+#dsc {color: #324fd1;}
+.box-statut .content a span {
+    color: #8d949b;
+    text-transform: uppercase;
+    font-family: 'Sen', sans-serif;
+    font-size: .7rem;
+}
+
+/*-----[SIDEBAR-RIGHT]-----*/
+
+
+/*-----[UPDATES]-----*/
+
+.updates {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.updates .container {
+    height: auto;
+    width: 60%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.box-update {
+    background: #1f1e1ef7;
+    padding: 25px;
+    box-shadow: 0 10px 12px rgb(0 0 0 / 10%);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.announcement-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255,.025);
+    justify-content: space-between;
+}
+
+.announcement-calendar {
+    background: #ffffff11;
+    width: 37px;
+    margin-right: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 12px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+.announcement-title {
+    font-family: 'Sen', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: #e6ba6a;
+}
+
+.announcement-meta {
+    display: flex;
+    flex-direction: row;
+}
+
+.announcement-meta li {
+    list-style: none;
+    text-decoration: none;
+    padding: 5px;
+    color: #6C7985;
+}
+.announcement-meta li i {font-size: .8rem;}
+.announcement-meta li span a {color: #6C7985;}
+.announcement-meta li span {
+    font-family: 'Sen', sans-serif;
+    font-size: .8rem;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.announcement-body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255,.025);
+    justify-content: space-between;
+}
+
+.announcement-body img {
+    width: 100%;
+    height: auto;
+}
+
+.announcement-body p {
+    color: #a1a4a7;
+    font-family: 'Sen', sans-serif;
+    font-size: .9rem;
+    margin: 10px;
+    text-align: center;
+}
+
+.announcement-footer {
+    display: flex;
+    width: 100%;
+}
+
+.afooter-btn {
+    font-family: 'Sen', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px 9px;
+    font-weight: 700;
+    color: #e6ba6a;
+    background: #ffffff0d;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
+    display: inline-table;
+    margin-left: auto;
+}
+
+
+/*-----[UPDATES]-----*/
+
+/*-----[FOOTER]-----*/
+.footer {
+    border-top: 4px solid #171717;
+    width: 100%;
+    display: flex;
+}
+
+.footer .container {
+    height: auto;
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.claim h1 {
+    color: #6C7985;
+    font-family: 'Sen', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 5px;
+}
+.claim p {
+    color: #4E5760;
+    font-family: 'Sen', sans-serif;
+    font-size: .9rem;
+    margin: 5px;
+}
+
+.rlinks a {
+    color: #4E5760;
+    font-family: 'Sen', sans-serif;
+    font-size: 1.5rem;
+    padding: 5px 5px;
+    margin: 5px;
+    transition: .2s ease-out;
+}
+.rlinks a:hover {
+    color: #cbd2da;
+}
+/*-----[FOOTER]-----*/
+
+@media screen and (max-width: 1280px) {
+    .updates .container {
+        width: 90%;
+        text-align: center;
+    }
+
+    .footer .container {
+        width: 90%;
+        text-align: center;
+    }
+
+    .announcement-calendar {
+        margin-right: 0;
+    }
+
+    .afooter-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
