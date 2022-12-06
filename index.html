@@ -7,7 +7,8 @@
     <meta data-n-head="ssr" name="viewport" content="width=device-width, user-scalable=no">
     <meta data-n-head="ssr" data-hid="description" name="description"
         content="Eronix est un serveur PVP Faction moddées, Crée en 2022 Eronix offre un gameplay Farm2Win et immersif.">
-    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/954812850352828416/1049126890725707856/eronixv2.gif">
+    <link rel="icon" type="image/png"
+        href="https://cdn.discordapp.com/attachments/954812850352828416/1049126890725707856/eronixv2.gif">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
     <link href="./src/css/style.css" rel="stylesheet">
 </head>
@@ -15,18 +16,33 @@
 <body>
     <section class="home">
         <div class="container">
-        <h1>ERONIX</h1>
+            <h1>ERONIX</h1>
         </div>
     </section>
 
-    <div class="sidebar-right">
-        <div class="sidebar-rheader">
-            <p><i class="fa-light fa-angle-left"></i> <span>Informations</span></p>
-        </div>
+    <section class="head">
+        <div class="container">
+            <div id="hmenu">
+                <ul>
+                    <button id="menuOpen"><i class="fa-solid fa-bars"></i></button>
+                    <a>
+                        CONNEXION
+                    </a>
+                </ul>
+            </div>
+            <div id="htop">
+                <ul>
 
-        <div class="sidebar-rbody">
-            <div class="box-statut">
-                <div class="content" id="contentSta">
+                    <a>
+                        CONNEXION
+                    </a>
+                    <a>
+                        INSCRIPTION
+                    </a>
+                </ul>
+            </div>
+            <div id="hbottom">
+                <ul>
                     <a>
                         ACCUEIL
                     </a>
@@ -39,8 +55,44 @@
                     <a>
                         RÈGLEMENT
                     </a>
-                    <a href="https://discord.gg/axdBYhxEDq">
+                    <a>
                         SUPPORT
+                    </a>
+                    <a>
+                        BOUTIQUE
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="sidebar" id="sidebar">
+        <div class="container">
+            <div class="sidebar-header">
+                <ul>
+                    <span>MENU</span>
+                    <button id="menuClose"><i class="fa-solid fa-close"></i></button>
+                </ul>
+            </div>
+            <div class="sidebar-body">
+                <ul>
+                    <a>
+                        ACCUEIL
+                    </a>
+                    <a>
+                        FORUMS
+                    </a>
+                    <a>
+                        STAFF
+                    </a>
+                    <a>
+                        RÈGLEMENT
+                    </a>
+                    <a>
+                        SUPPORT
+                    </a>
+                    <a>
+                        BOUTIQUE
                     </a>
                     <a>
                         CONNEXION
@@ -48,26 +100,13 @@
                     <a>
                         INSCRIPTION
                     </a>
-                </div>
-            </div>
-            <div class="box-statut">
-                <div class="content">
-                    <h1>Eronix Statuts</h1>
-                    <span id="uph1"></span>
-                </div>
-                <div class="content">
-                    <a id="mc">
-                        <p>Serveur Minecraft</p>
-                        <span>0/3 Serveurs en ligne</span>
-                    </a>
-                    <a id="dsc">
-                        <p>Serveur Discord</p>
-                        <span>88 Membres</span>
-                    </a>
-                </div>
+                </ul>
             </div>
         </div>
     </div>
+
+
+
     <section class="updates">
         <div class="container">
             <div class="box-update">
@@ -86,14 +125,16 @@
                         </div>
                     </div>
                     <div class="announcement-body">
-                        <img src="https://cdn.discordapp.com/attachments/954812850352828416/1049122107117817967/image.png">
+                        <img
+                            src="https://cdn.discordapp.com/attachments/954812850352828416/1049122107117817967/image.png">
                         <p>
                             Hello les Minecraftiens et Minecraftiennes !<br>
                             bienvenue sur le site Eronix v2...<br><br>
 
-                            Vous venez surement pour découvrir les nouveautés et bien..<br>
-                            pour le moment le site et pas totalement dévoilée. Mais petit secret.. <br>
-                            On réouvre dans quelques jours mais ne le dites pas a trop de monde ou on<br> ne pourras pas vous faires pleins de cadeauww.
+                            Vous venez surement pour découvrir les nouveautés et bien.. pour le moment le site et pas
+                            totalement dévoilée. Mais petit secret.. <br>
+                            On réouvre dans quelques jours mais ne le dites pas a trop de monde ou on<br> ne pourras pas
+                            vous faires pleins de cadeauww.
 
                             Merci à vous d'avoir pris 5 minutes de votre temps.
                         </p>
@@ -107,27 +148,50 @@
     </section>
     <section class="footer">
         <div class="container">
-            <div class="claim">
-                <h1>2022 © Eronix.</h1>
-                <p>
-                    Eronix est un serveur PVP Faction moddées, Crée en 2022 Eronix offre un gameplay Farm2Win et
-                    immersif. <br> <br>
-                    Le serveur Eronix n'est pas affilié ou approuvé par Mojang, AB.
-                </p>
-                <p>
-                    développer par <a>Oxymax (Founders Eronix)</a>
-                </p>
+            <div class="features-container">
+                <div class="feature">
+                    <h1>À propos</h1>
+                    <p>Eronix est un serveur PVP Faction moddées, Crée en 2022 par Fabien_Ferrari et Oxymax, Eronix vous
+                        offre un gameplay Farm2Win et immersif.
+                        Le serveur Eronix n'est pas affilié ou approuvé par Mojang, AB.</p>
+                    <ul id="drt">
+                        <a href="">Mentions Légales</a>
+                        <a href="">Conditions Générales de Vente</a>
+                        <a href="">Conditions Générales de d'Utilisation</a>
+                    </ul>
+                </div>
+                <div class="feature">
+                    <h1>Liens utiles</h1>
+                    <ul>
+                        <a href="https://discord.gg/ekTtVNkZjT"><i class="fa-brands fa-discord"></i> Discord</a>
+                        <a href="https://www.youtube.com/channel/UCriGlz6CrtT3KJbEGrcLAYg"><i
+                                class="fa-brands fa-youtube"></i> YouTube</a>
+                        <a href="https://www.twitch.tv/eronixoff"><i class="fa-brands fa-twitch"></i> Twitch</a>
+                        <a href="https://www.instagram.com/eronixoff/"><i class="fa-brands fa-instagram"></i>
+                            Instagram</a>
+                        <a href="https://twitter.com/eronixoff"><i class="fa-brands fa-twitter"></i> Twitter</a>
+                        <a href="https://www.tiktok.com/@eronixoff"><i class="fa-brands fa-tiktok"></i> TikTok</a>
+                    </ul>
+
+                </div>
+                <div class="feature">
+                    <h1>Vos avantages</h1>
+                    <p>Vous souhaitez des avantages, chercher à évoluer plus vite ?
+                        Alors rendez-vous sur notre boutique 100% FarmToWin.
+                    </p>
+                    <ul id="bfeature">
+                        <a><i class="fa-regular fa-store"></i> Notre boutique</a>
+                    </ul>
+                </div>
             </div>
-            <div class="rlinks">
-                <a href="https://discord.gg/ekTtVNkZjT"><i class="fa-brands fa-discord"></i></a>
-                <a href="https://www.youtube.com/channel/UCriGlz6CrtT3KJbEGrcLAYg"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://www.twitch.tv/eronixoff"><i class="fa-brands fa-twitch"></i></a>
-                <a href="https://www.instagram.com/eronixoff/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://twitter.com/eronixoff"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.tiktok.com/@eronixoff"><i class="fa-brands fa-tiktok"></i></a>
+            <div class="features-claim">
+                <h1>Eronix © 2022. Tous droits réservés. <a>Mentions Légales</a>.</h1>
+                <p>Développer avec 💖 par <a>Oxymax</a></p>
             </div>
         </div>
     </section>
+
+    <script src="./src/js/menu.js"></script>
 </body>
 
 </html>
