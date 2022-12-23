@@ -1,0 +1,73 @@
+.forums {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.forums .container {
+    height: auto;
+    width: 60%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.forums .container h1 {
+    margin-left:0;
+    margin-bottom:20px;
+    color: #e6ba6a;
+    font-weight: 800;
+    font-family: 'Sen', sans-serif;
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
+
+.box-forums {
+    width: 80%;
+    background: #1f1e1ef7;
+    padding: 25px;
+    box-shadow: 0 10px 12px rgb(0 0 0 / 10%);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.forums .container .box-forums h1 {
+    margin-left:0;
+    margin-bottom:10px;
+    color: #fff;
+    font-weight: 800;
+    font-family: 'Sen', sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+}
+
+.box-forums .ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-forums .ul a {
+    padding: 20px 20px;
+    background: #10101030;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    border-left: 3px solid transparent;
+    border-radius: 6px;
+    color: #e6ba6a;
+    font-family: 'Sen', sans-serif;
+    font-size: 1rem;
+}
+.box-forums .ul a:hover {
+    background: #101010aa;
+    border-color: #e6ba6a;
+}
