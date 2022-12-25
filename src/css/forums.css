@@ -14,7 +14,6 @@
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
-    
 }
 
 .forums .container h1 {
@@ -70,4 +69,10 @@
 .box-forums .ul a:hover {
     background: #101010aa;
     border-color: #e6ba6a;
+}
+
+@media screen and (max-width: 1280px) {
+   .forums .container {
+      width: 90%;
+   }
 }
