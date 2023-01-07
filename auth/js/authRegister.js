@@ -36,7 +36,7 @@ async function register() {
             uid: userId,
             email: email,
         });
-        window.location = "./index.html"
+        window.location = ".././index.html"
     } catch (ex) {
         console.error(ex);
         document.getElementById("error").innerHTML = ex.message
