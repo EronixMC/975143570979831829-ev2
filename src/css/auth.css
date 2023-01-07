@@ -92,12 +92,12 @@
     margin: 10px;
 }
 
-.alert p {
+.auth .container .box-auth .alert p {
     font-family: 'Sen', sans-serif;
     color: #fff;
 }
 
-.preq {
+.auth .container .box-auth .alert p .preq {
     border: 1px solid #414141;
     background: #252525;
     border-radius: 6px;
