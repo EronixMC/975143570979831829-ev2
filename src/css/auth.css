@@ -54,6 +54,16 @@
     margin-right: auto;
 }
 
+#form span {
+    font-family: 'Sen', sans-serif;
+    margin-top: -36px;
+    margin-bottom: 17px;
+    margin-left: auto;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
 #form input:focus {
     border: 1px solid #e6ba6a;
 }
@@ -82,28 +92,4 @@
     .auth .container {
         width: 100%;
     }
-}
-
-.alert {
-    background: #101010;
-    border-radius: 6px;
-    border-left: 4px solid #ff0000;
-    padding: 20px 20px;
-    margin: 10px;
-}
-
-.auth .container .box-auth .alert p {
-    font-family: 'Sen', sans-serif;
-    color: #fff;
-}
-
-.auth .container .box-auth .alert p .preq {
-    border: 1px solid #414141;
-    background: #252525;
-    border-radius: 6px;
-    padding: 5px 10px;
-    font-family: 'Sen', sans-serif;
-    color: #8d8d8d;
-    margin-top: 10px;
-    width: max-content;
 }
