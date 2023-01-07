@@ -10,19 +10,15 @@ const firebaseConfig = {
 };
 firebase.initializeApp(firebaseConfig);
 
-firebase.auth().onAuthStateChanged((user) => {
-    if (user) {
-    }
-})
-
 async function register() {
     const db = firebase.database();
     const username = document.getElementById("pseudo").value
     const email = document.getElementById("email").value
+    const emailVerified = `${email}@eronix.fr`;
     const password = document.getElementById("password").value
     let userId, user;
     try {
-        let userCredential = await firebase.auth().createUserWithEmailAndPassword(email, password)
+        let userCredential = await firebase.auth().createUserWithEmailAndPassword(emailVerified, password)
         if (!userCredential?.user?.uid) {
             throw new Error("There is no UID!", userCredential);
         }
@@ -34,7 +30,7 @@ async function register() {
             username: username,
             password: password,
             uid: userId,
-            email: email,
+            email: emailVerified,
         });
         window.location = ".././index.html"
     } catch (ex) {
