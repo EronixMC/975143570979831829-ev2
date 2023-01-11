@@ -1,0 +1,163 @@
+<html lang="fr">
+
+<head>
+    <meta data-n-head="ssr" charset="utf-8">
+    <title>Accueil | Eronix</title>
+    <meta name="theme-color" content="#e6ba6a">
+    <meta data-n-head="ssr" name="viewport" content="width=device-width, user-scalable=no">
+    <meta data-n-head="ssr" data-hid="description" name="description"
+        content="Eronix est un serveur PVP Faction moddées, Crée en 2022 Eronix offre un gameplay Farm2Win et immersif.">
+    <link rel="icon" type="image/png"
+        href="https://cdn.discordapp.com/attachments/954812850352828416/1049126890725707856/eronixv2.gif">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+    <link href="../src/css/style.css" rel="stylesheet">
+    <link href="../src/css/auth.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="header">
+        <div class="container">
+            <div class="navbar-mobile">
+                <div class="container">
+                    <button id="menuOpen"><i class="fa-light fa-bars"></i></button>
+                    <button id="menuClose"><i class="fa-light fa-close"></i></button>
+                </div>
+            </div>
+            <div class="login-bar">
+                <div class="content">
+                    <div class="ulx">
+                        <a href="" class="login"><i class="fa-light fa-user-unlock"></i> Connexion</a>
+                        <a href="" class="login"><i class="fa-light fa-user-check"></i> Inscription</a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar">
+                <div class="content">
+                    <ul>
+                        <a href="../accueil">
+                            ACCUEIL
+                        </a>
+                        <a>
+                            <i class="fa-light fa-lock-keyhole"></i> VOTE
+                        </a>
+                        <a>
+                            <i class="fa-light fa-lock-keyhole"></i> BOUTIQUE
+                        </a>
+                        <a>
+                            <i class="fa-light fa-lock-keyhole"></i> WIKI
+                        </a>
+                        <a href="https://discord.gg/FthZta4zZT">
+                            SUPPORT
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="sidebarView">
+            <div class="sidebar" id="sidebar" style="display: flex;">
+                <div class="container">
+                    <div class="sidebar-header">
+                        <ul>
+                            <span>MENU</span>
+                        </ul>
+                    </div>
+                    <div class="sidebar-body">
+                        <ul>
+                            <a href="../accueil">
+                                ACCUEIL
+                            </a>
+                            <a>
+                                FORUMS
+                            </a>
+                            <a>
+                                WIKI
+                            </a>
+                            <a href="../staff.html">
+                                STAFF
+                            </a>
+                            <a href="../rules">
+                                RÈGLEMENT
+                            </a>
+                            <a href="https://discord.gg/FthZta4zZT">
+                                SUPPORT
+                            </a>
+                            <a>
+                                BOUTIQUE
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="auth">
+        <div class="container">
+            <div class="box-auth">
+                <div id="form">
+                    <h1>INSCRIPTION</h1>
+                    <input id="pseudo" type="text" class="input" required="" placeholder="Pseudo (MC)">
+                    <input id="email" type="text" class="input" required="" placeholder="Identifiant">
+                    <span>@eronix.fr</span>
+                    <input id="password" type="password" class="input" required="" placeholder="Mot de passe">
+                    <button class="loginBtn" onclick="register()">S'inscrire</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col">
+                    <div class="col">
+                        <h3>À propos</h3>
+                        <p>Eronix est un serveur PVP Faction moddées, le serveur n'est pas affilié à Mojang AB.
+                        <p>
+                    </div>
+                    <div class="col">
+                        <h3>Liens utiles</h3>
+                        <p>En soutenant le serveur, vous permettez le développement de celui-ci ainsi que de nouvelles
+                            fonctionnalités ! Merci à vous !</p>
+                        <ul class="ula">
+                            <a href="">Mentions légales</a>
+                            <a href="">CGU</a>
+                            <a href="">CGV</a>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Réseaux sociaux</h3>
+                        <ul>
+                            <li>
+                                <a href=""><i class="fa-brands fa-discord"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-twitch"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-spair"></div>
+            <div class="footer-bottom">
+                <h4>Eronix © 2023 - Tous droits réservés.</h4>
+                <h4>Propulsé par Eronix</h4>
+            </div>
+        </div>
+    </section>
+    <script src="../src/js/menu.js"></script>
+</body>
+
+</html>
